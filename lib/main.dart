@@ -48,20 +48,6 @@ class MyApp extends StatelessWidget {
   }
 }
 
-// GoRouter Configuration
-// final GoRouter _router = GoRouter(
-//   routes: [
-//     GoRoute(path: '/', builder: (context, state) => const LoginScreen()),
-//     GoRoute(path: '/signup', builder: (context, state) => const SignUpScreen()),
-//     GoRoute(
-//         path: '/tasks', builder: (context, state) => const TaskListScreen()),
-//     GoRoute(
-//       path: '/tasks/:id',
-//       builder: (context, state) =>
-//           TaskDetailsScreen(taskId: state.params['id']!),
-//     ),
-//   ],
-// );
 final GoRouter _router = GoRouter(
   routes: [
     GoRoute(
@@ -80,25 +66,3 @@ final GoRouter _router = GoRouter(
     ),
   ],
 );
-
-// final GoRouter _router = GoRouter(
-//   routes: [
-//     GoRoute(path: '/', builder: (context, state) => const LoginScreen()),
-//     GoRoute(path: '/signup', builder: (context, state) => const SignUpScreen()),
-//     GoRoute(
-//         path: '/tasks', builder: (context, state) => const TaskListScreen()),
-//     GoRoute(
-//       path: '/tasks/:id',
-//       builder: (context, state) =>
-//           TaskDetailsScreen(taskId: state.pathParameters['id']!),
-//     ),
-//     GoRoute(
-//       path: '/task-form',
-//       builder: (context, state) {
-//         final task = state.extra as Task?;
-//         return TaskFormScreen(
-//             task: task); // Pass task for editing or null for creating
-//       },
-//     ),
-//   ],
-// );
